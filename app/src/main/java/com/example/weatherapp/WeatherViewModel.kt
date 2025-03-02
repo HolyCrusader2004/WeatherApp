@@ -12,7 +12,7 @@ import kotlinx.coroutines.launch
 
 class WeatherViewModel:ViewModel() {
     private val weatherApi = Instance.weatherApi
-    private val apiKey = "8af4307f347b467aa6381230252302"
+    private val apiKey = "YOUR_API_KEY"
     private val _weatherResult = MutableLiveData<NetworkResponse<WeatherModel>>()
     val weatherResult: LiveData<NetworkResponse<WeatherModel>> = _weatherResult
 
